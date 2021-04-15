@@ -13,6 +13,9 @@
         android:theme="@style/Theme.HotelManagement"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".BookingActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
             android:name=".SignUpActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity

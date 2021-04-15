@@ -95,7 +95,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         roomBookingBt.setOnClickListener(v -> {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+            Intent intent = new Intent(getApplicationContext(), BookingActivity.class);
+            intent.putExtra("username",username);
             startActivity(intent);
         });
     }
