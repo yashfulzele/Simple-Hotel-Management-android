@@ -71,6 +71,7 @@
 
     <Button
         android:id="@+id/service_booking"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="140dp"
@@ -82,14 +83,15 @@
 
     <Button
         android:id="@+id/room_booking"
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="97dp"
+        android:layout_marginHorizontal="100dp"
         android:layout_marginTop="170dp"
-        android:layout_marginBottom="0dp"
+        android:padding="3dp"
+        android:paddingRight="8dp"
         android:background="@color/purple_200"
-        android:drawableEnd="@drawable/ic_arrow"
-        android:paddingBottom="0dp"
+        android:drawableRight="@drawable/ic_arrow2"
         android:text="Room Booking" />
 
 </LinearLayout>
