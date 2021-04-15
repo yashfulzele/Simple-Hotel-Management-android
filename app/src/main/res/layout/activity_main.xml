@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/purple_200"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
@@ -16,7 +15,7 @@
         android:fontFamily="@font/poppinsmedium"
         android:text="Welcome!"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="38sp" />
 
     <TextView
@@ -26,7 +25,7 @@
         android:fontFamily="@font/poppinsmedium"
         android:text="Full name"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="30sp" />
 
     <TextView
@@ -36,7 +35,7 @@
         android:fontFamily="@font/poppinsmedium"
         android:text="username"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="30sp" />
 
     <TextView
@@ -46,14 +45,51 @@
         android:fontFamily="@font/poppinsmedium"
         android:text="email"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="@color/purple_200"
         android:textSize="30sp" />
-    <Button
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Booking"
-        android:id="@+id/booking"
+        android:layout_marginLeft="30dp"
         android:layout_marginTop="30dp"
-        android:layout_marginHorizontal="120dp"/>
+        android:layout_marginRight="30dp"
+        android:hint="Service"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUsername"
+        tools:layout_editor_absoluteX="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:drawableEnd="@drawable/ic_service"
+            android:fontFamily="@font/poppinsmedium"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/service_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/purple_200"
+        android:paddingBottom="0dp"
+        android:text="Book" />
+
+    <Button
+        android:id="@+id/room_booking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="97dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/purple_200"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:paddingBottom="0dp"
+        android:text="Room Booking" />
 
 </LinearLayout>
