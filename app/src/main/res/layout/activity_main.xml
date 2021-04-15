@@ -85,7 +85,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="97dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="170dp"
         android:layout_marginBottom="0dp"
         android:background="@color/purple_200"
         android:drawableEnd="@drawable/ic_arrow"
